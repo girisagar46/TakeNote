@@ -2,7 +2,6 @@ package com.project.TakeNote;
 
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -12,9 +11,9 @@ import java.util.Properties;
 /**
  * Created by linuxsagar on 5/7/16.
  */
-public class DBService {
+class DBService {
     private Connection myConn;
-    public DBService() throws IOException, SQLException {
+    DBService() throws IOException, SQLException {
         Properties dbProperties = new Properties();
         dbProperties.load(new FileInputStream("db.properties"));
 
@@ -25,7 +24,7 @@ public class DBService {
         myConn = DriverManager.getConnection(dbUrl,username,password);
     }
 
-    public Connection getConnection(){
+    Connection getConnection(){
         System.out.println("myConn = " + myConn);
         System.out.println("Connected");
         return myConn;

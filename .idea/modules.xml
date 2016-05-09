@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SwingProject_NoteTakingApp.iml" filepath="$PROJECT_DIR$/SwingProject_NoteTakingApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TakeNote.iml" filepath="$PROJECT_DIR$/TakeNote.iml" />
     </modules>
   </component>
 </project>
